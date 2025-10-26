@@ -1,5 +1,5 @@
 {
-  "name": "laragetmodel/laragetmodel",
+  "name": "zeydkazanci03/laragetmodel",
   "description": "Laravel helper to load models via GetModel::run('ModelName')->method()",
   "type": "library",
   "license": "MIT",
