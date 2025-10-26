@@ -1,0 +1,26 @@
+{
+  "name": "laragetmodel/laragetmodel",
+  "description": "Laravel helper to load models via GetModel::run('ModelName')->method()",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Laragetmodel\\GetModel\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.0",
+    "illuminate/support": "^10.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Laragetmodel\\GetModel\\Providers\\GetModelServiceProvider"
+      ],
+      "aliases": {
+        "GetModel": "Laragetmodel\\GetModel\\Facades\\GetModel"
+      }
+    }
+  },
+  "minimum-stability": "stable"
+}
