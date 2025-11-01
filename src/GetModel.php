@@ -17,7 +17,7 @@ class GetModel
         try {
             $config = $app['config']->get('getmodel.base_model_namespace');
             if (!empty($config)) {
-                $this->baseModelNamespace = rtrim($config, '\\') . '\\\';
+                $this->baseModelNamespace = rtrim($config, '\\') . '\\';
             }
         } catch (\Throwable $e) {
             // ignore if config not available yet
